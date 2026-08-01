@@ -19,7 +19,7 @@ Written as an R3 landscape brief; published in case it saves anyone else the for
 
 A single scrolling deck of 13 numbered pages plus a closing panel:
 
-- **Cover** – the field at a glance: ten mechanisms, one pre-mainnet, ~$300M combined, and the caveat that the RWA tier next door dwarfs it.
+- **Cover** – the field at a glance: ten mechanisms all now live, ~$300M combined, and the caveat that the RWA tier next door dwarfs it.
 - **02 · Why the niche exists** – what fixed-rate and fixed-term actually mean, why borrowers want them (cash-flow planning, institutional mandates, hedging, structured products), and the three structural reasons the slice stays small: liquidity fragmentation across maturities, rollover risk, and capital-efficiency drag.
 - **03 · Worked example** – *borrow 10 ETH for three months*, routed through nine native mechanisms side by side. The clearest single page for seeing how differently each protocol discovers a rate.
 - **04 · Cross-cutting** – the field sliced five ways: rate discovery, collateral model, capital efficiency and leverage, flexibility vs. predictability, and maturity/scale.
@@ -42,7 +42,7 @@ A single scrolling deck of 13 numbered pages plus a closing panel:
 | [Exactly](https://exact.ly/) | Per-maturity pool utilization | Live · ~$3.8M |
 | [Secured Finance](https://secured.finance/) | On-chain order book + Itayose auction | Live · ~$0.6M |
 | [IPOR](https://ipor.io/) | Interest-rate swap AMM (overlay on Aave/Compound) | Live · IRS now legacy |
-| [Morpho Midnight](https://morpho.org/) | Intent matching in isolated markets | Pre-mainnet as written – **see [Known gaps](#known-gaps)** |
+| [Morpho Midnight](https://morpho.org/) | Two-sided offers, no interest-rate model | Live 21 Jul 2026 · ~$1.9M *(Aug 2026)* |
 
 ## The headline findings
 
@@ -50,11 +50,12 @@ A single scrolling deck of 13 numbered pages plus a closing panel:
 - **Fira's headline was doing the marketing.** A ~$425M gross loan book nets to roughly $5M of real on-chain value once the collateral it loops through itself is stripped out. Net TVL is the only honest cross-protocol ruler, so the brief ranks on it throughout.
 - **Scale was never the survival trait.** Notional once topped ~$843M and still wound down after the November 2025 Balancer hack. Goldfinch – a16z-backed, once the flagship of undercollateralized RWA credit – passed GIP-87 unanimously in June 2026 and went into maintenance mode with GFI down ~99.8% from its 2022 high.
 - **The money already moved next door.** ~$15B of tokenized Treasuries at a blended ~3.3% yield, with Circle's USYC having overtaken BlackRock's BUIDL as the largest single product, plus Maple (~$2.1B) and Centrifuge (~$1.63B) in institutional credit.
-- **Rate discovery is the real taxonomy.** Auction, bond price, order book, a token you hold, an intent, pool utilization, a swap overlay, or simple borrower decree – mechanism choice is what actually separates these protocols, not branding.
+- **Rate discovery is the real taxonomy.** Auction, bond price, order book, a two-sided offer, a token you hold, pool utilization, a swap overlay, or simple borrower decree – mechanism choice is what actually separates these protocols, not branding.
+- **The best-funded attempt launched into silence.** Morpho shipped Midnight on 21 July 2026 and it drew ~$1.9M. The mechanism was built properly by the largest team in on-chain lending, and the volume still did not appear – which is the cleanest evidence the brief has for its own thesis.
 
 ## How it's built
 
-One file. `index.html`, ~64KB, 1,264 lines, 14 `<section>` blocks. No build step, no bundler, no dependencies to install, no JavaScript.
+One file. `index.html`, ~68KB, 1,264 lines, 14 `<section>` blocks. No build step, no bundler, no dependencies to install, no JavaScript.
 
 - **Type** – [Fraunces](https://fonts.google.com/specimen/Fraunces) for display and [Inter](https://fonts.google.com/specimen/Inter) for body, loaded from Google Fonts. These are the only external network requests the page makes.
 - **Palette** – defined as CSS custom properties in `:root`: paper `#F2EBDD`, ink `#1A1816`, accent `#C44A36`, plus muted/rule/highlight/olive supporting tones. Change a value there and it propagates through the whole deck.
@@ -104,11 +105,14 @@ Because the underlying figures move continuously, treat every number here as a d
 
 ## Known gaps
 
-Three things a next revision should address:
+One thing a next revision should address:
 
-1. **Morpho Midnight is no longer pre-mainnet.** It launched publicly on **21 July 2026** – offer-based fixed-rate, fixed-term credit, starting with cbBTC/USDC on Base across a limited set of maturities, and carrying roughly $1.9M TVL in its first ten days. The cover headline ("One isn't live yet"), the matrix status cell, the closing stat block, and the `og:title` all still describe it as pre-launch.
-2. **Social previews are broken.** `og:image` and `twitter:image` point at the relative filename `Fixed-rate-v4-og.png`, which is not in the repo and [404s in production](https://fixedrateprotocol.com/Fixed-rate-v4-og.png). Link unfurls on X, LinkedIn, Slack and iMessage need an absolute `https://fixedrateprotocol.com/…` URL and the actual image committed. A leftover `https://your-domain.com/…` placeholder also sits in an HTML comment. There is no `og:url` or `<link rel="canonical">` either.
-3. **A stale cross-reference.** The text on page 13 points readers to "pages 10–11" for the institutional/RWA tier, which now lives on pages 11–12 after the cross-cutting page was moved ahead of the matrix.
+1. **Social previews are broken.** `og:image` and `twitter:image` point at the relative filename `Fixed-rate-v4-og.png`, which is not in the repo and [404s in production](https://fixedrateprotocol.com/Fixed-rate-v4-og.png). Link unfurls on X, LinkedIn, Slack and iMessage need an absolute `https://fixedrateprotocol.com/…` URL and the actual image committed. A leftover `https://your-domain.com/…` placeholder also sits in an HTML comment. There is no `og:url` or `<link rel="canonical">` either.
+
+Closed since this README was first written:
+
+- ~~**Morpho Midnight is no longer pre-mainnet.**~~ Fixed 1 Aug 2026. Midnight launched publicly on **21 July 2026** – offer-based fixed-rate, fixed-term credit, cbBTC/USDC on Base across a limited set of maturities, ~$1.9M TVL. The cover headline, subtitle, matrix row and takeaway, worked example, both cross-cutting bullets, the deep-dive on page 06, the closing stat block and the OG/Twitter meta were all reframed, and the mechanism was corrected from *intent-based* (the pre-launch whitepaper design) to *offer-based* (what actually shipped).
+- ~~**A stale cross-reference.**~~ Fixed 1 Aug 2026. Page 13 pointed at "pages 10–11" for the institutional/RWA tier; it now reads pages 11–12.
 
 ## Credits
 
