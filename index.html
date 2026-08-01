@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fixed-Rate Borrowing Protocols – DeFi Landscape Brief</title>
-<meta name="description" content="A side-by-side of the ten DeFi protocols that let a borrower lock a fixed interest rate – mechanism, TVL and status as of June 2026 – plus the ~$15B institutional RWA tier next door.">
+<meta name="description" content="A side-by-side of the ten DeFi protocols that let a borrower lock a fixed interest rate – mechanism, TVL and status as of August 2026 – plus the ~$15B institutional RWA tier next door.">
 
 <!-- Favicon – inline SVG padlock (the Rate.Lock motif); no external file needed -->
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%227%22%20fill%3D%22%231A1816%22%2F%3E%3Cpath%20d%3D%22M11%2015%20V12%20a5%205%200%200%201%2010%200%20V15%22%20fill%3D%22none%22%20stroke%3D%22%23F2EBDD%22%20stroke-width%3D%222.4%22%20stroke-linecap%3D%22round%22%2F%3E%3Crect%20x%3D%228.5%22%20y%3D%2214.5%22%20width%3D%2215%22%20height%3D%2210.6%22%20rx%3D%222.2%22%20fill%3D%22%23C44A36%22%2F%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2218.7%22%20r%3D%221.7%22%20fill%3D%22%231A1816%22%2F%3E%3Crect%20x%3D%2215.2%22%20y%3D%2219.5%22%20width%3D%221.6%22%20height%3D%223.4%22%20rx%3D%220.8%22%20fill%3D%22%231A1816%22%2F%3E%3C%2Fsvg%3E">
@@ -17,18 +17,18 @@
      when hosted. Once you know the URL, replace both with e.g.
      https://your-domain.com/Fixed-rate-v4-og.png (and set og:url to the page). -->
 <meta property="og:type" content="article">
-<meta property="og:title" content="Ten ways to lock a borrowing rate. One isn't live yet.">
-<meta property="og:description" content="A side-by-side of the ten DeFi protocols that let a borrower lock a fixed interest rate – mechanism, TVL and status (June 2026) – plus the ~$15B institutional RWA tier next door.">
+<meta property="og:title" content="Ten ways to lock a borrowing rate. Now all ten are live.">
+<meta property="og:description" content="A side-by-side of the ten DeFi protocols that let a borrower lock a fixed interest rate – mechanism, TVL and status (August 2026) – plus the ~$15B institutional RWA tier next door.">
 <meta property="og:image" content="Fixed-rate-v4-og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Rate.Lock landscape brief – ten DeFi fixed-rate protocols, ~$300M field led by Wildcat, ~$15B tokenized Treasuries next door, one still pre-mainnet.">
+<meta property="og:image:alt" content="Rate.Lock landscape brief – ten DeFi fixed-rate protocols, ~$300M field led by Wildcat, ~$15B tokenized Treasuries next door, Morpho Midnight now live.">
 <meta property="og:site_name" content="R3 – DeFi Landscape Brief">
 
 <!-- Twitter / X card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Ten ways to lock a borrowing rate. One isn't live yet.">
-<meta name="twitter:description" content="A side-by-side of the ten DeFi protocols that let a borrower lock a fixed interest rate – mechanism, TVL and status (June 2026) – plus the ~$15B institutional RWA tier next door.">
+<meta name="twitter:title" content="Ten ways to lock a borrowing rate. Now all ten are live.">
+<meta name="twitter:description" content="A side-by-side of the ten DeFi protocols that let a borrower lock a fixed interest rate – mechanism, TVL and status (August 2026) – plus the ~$15B institutional RWA tier next door.">
 <meta name="twitter:image" content="Fixed-rate-v4-og.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -654,19 +654,19 @@
 
   <!-- ============ COVER ============ -->
   <section class="slide cover-slide">
-    <span class="label" style="color: var(--accent); margin-bottom: 14px;">Fixed-Rate Borrowing in DeFi · Landscape Brief · June 2026</span>
+    <span class="label" style="color: var(--accent); margin-bottom: 14px;">Fixed-Rate Borrowing in DeFi · Landscape Brief · June 2026 · updated August 2026</span>
 
-    <h1 class="cover" style="font-size: 76px; margin: 12px 0 22px;">Ten ways to lock<br>a borrowing rate. <em>One<br>isn&#x2019;t live yet</em><span class="accent-dot">.</span></h1>
+    <h1 class="cover" style="font-size: 76px; margin: 12px 0 22px;">Ten ways to lock<br>a borrowing rate. <em>Now<br>all ten are live</em><span class="accent-dot">.</span></h1>
 
     <p class="subtitle" style="font-size: 19px; max-width: 940px; margin-bottom: 32px;">
-      Every other corner of DeFi lets the borrowing rate float. Here, ten teams are trying to nail it down for a fixed term &ndash; the niche beneath variable-rate giants like Aave and Morpho Blue. Strip away the mechanism names and they are ten bets on one hard problem: how to make a fixed rate liquid when every maturity is its own market. Ten mechanisms, one still pre-mainnet, the whole DeFi-native field worth a few hundred million and led by borrower-credit shop Wildcat. The honest caveat: the institutional RWA tier next door is ~50&times; bigger, and that is where the real money already sits.
+      Every other corner of DeFi lets the borrowing rate float. Here, ten teams are trying to nail it down for a fixed term &ndash; the niche beneath variable-rate giants like Aave and Morpho Blue. Strip away the mechanism names and they are ten bets on one hard problem: how to make a fixed rate liquid when every maturity is its own market. The last holdout shipped on <strong>21 July 2026</strong>, when Morpho launched <strong>Midnight</strong> &ndash; and it drew <strong>~$1.9M</strong>, which tells you more about the demand than any mechanism does. Ten live mechanisms, the whole DeFi-native field worth a few hundred million and led by borrower-credit shop Wildcat. The honest caveat: the institutional RWA tier next door is ~50&times; bigger, and that is where the real money already sits.
     </p>
 
     <div class="two-col-asym" style="gap: 56px;">
       <div>
         <h4 style="margin-bottom: 14px;">The ten core protocols</h4>
         <ul style="list-style: none; padding: 0; margin: 0; font-size: 14.5px; line-height: 1.5;">
-          <li style="padding: 9px 0; border-bottom: 1px solid var(--rule);"><strong>Morpho Midnight</strong> · intent-based fixed-term credit markets <span class="prelaunch-badge">Pre-launch</span></li>
+          <li style="padding: 9px 0; border-bottom: 1px solid var(--rule);"><strong>Morpho Midnight</strong> · offer-based fixed-term credit markets <span class="prelaunch-badge">Live 21 Jul &middot; ~$1.9M</span></li>
           <li style="padding: 9px 0; border-bottom: 1px solid var(--rule);"><strong>Term Finance</strong> · weekly sealed-bid rate auctions</li>
           <li style="padding: 9px 0; border-bottom: 1px solid var(--rule);"><strong>TermMax</strong> · tokenized bonds + AMM range orders</li>
           <li style="padding: 9px 0; border-bottom: 1px solid var(--rule);"><strong>Fira</strong> · tokenized fixed-maturity bonds &ndash; <span class="hl-accent">big on paper, ~$5M once you net it</span></li>
@@ -681,9 +681,9 @@
 
       <div>
         <div class="proof-headline">
-          <span class="battle-label">Combined field size · loans + TVL, Jun 2026</span><br>
+          <span class="battle-label">Combined field size · loans + TVL, Jun 2026 · Midnight Aug 2026</span><br>
           <span class="battle-figure"><span class="num">~$300M</span></span>
-          <p style="font-size: 14.5px; color: var(--muted); max-width: 320px;">&ndash; and most of that is two names. Borrower-credit shop <strong>Wildcat</strong> (~$150M outstanding) and <strong>Liquity V2</strong> (~$74M) are the bulk of the field. <strong>Fira</strong> looks like the leader on a ~$425M headline &ndash; until you net out the collateral it loops through itself and that number collapses to <strong>~$5M</strong> of real on-chain value. The metric was doing the marketing. <strong>Notional</strong> once topped ~$843M and still wound down after the Nov 2025 Balancer hack; scale was never what kept anyone alive. And the institutional RWA tier next door is still <strong>~50&times;</strong> bigger than all of this combined.</p>
+          <p style="font-size: 14.5px; color: var(--muted); max-width: 320px;">&ndash; and most of that is two names. Borrower-credit shop <strong>Wildcat</strong> (~$150M outstanding) and <strong>Liquity V2</strong> (~$74M) are the bulk of the field. <strong>Fira</strong> looks like the leader on a ~$425M headline &ndash; until you net out the collateral it loops through itself and that number collapses to <strong>~$5M</strong> of real on-chain value. The metric was doing the marketing. <strong>Notional</strong> once topped ~$843M and still wound down after the Nov 2025 Balancer hack; scale was never what kept anyone alive. The most-hyped name, <strong>Morpho Midnight</strong>, finally shipped in July and sits at <strong>~$1.9M</strong>. And the institutional RWA tier next door is still <strong>~50&times;</strong> bigger than all of this combined.</p>
         </div>
       </div>
     </div>
@@ -752,7 +752,7 @@
           <tr><td>Fira</td><td>Open a position in the 3-month market; the <strong>Bond Token</strong> you mint locks the rate, and you can sell the <strong>Coupon Token</strong> for upfront yield.</td></tr>
           <tr><td>Secured Finance</td><td>Place a limit order in the 3-month <strong>order book</strong>; you mint a tokenized <strong>zero-coupon bond</strong> (&ldquo;ZC ETH&hellip;&rdquo;) at the matched rate.</td></tr>
           <tr><td>Inverse (FiRM)</td><td>Buy the required <strong>DBR</strong> at market price &ndash; that price <em>is</em> your locked rate.</td></tr>
-          <tr><td>Morpho Midnight</td><td>Submit an <strong>intent</strong> for a fixed-rate / fixed-term match <span class="prelaunch-badge">once live</span></td></tr>
+          <tr><td>Morpho Midnight</td><td>Take a standing <strong>offer</strong> &ndash; or quote your own &ndash; in the relevant fixed-term market. <span style="color:var(--muted);">At launch: cbBTC/USDC on Base only, so a 3-month ETH borrow isn&#x2019;t routable here yet.</span></td></tr>
           <tr><td>Exactly</td><td>Lock the rate straight from the <strong>3-month maturity pool</strong> (priced off its utilization).</td></tr>
           <tr><td>IPOR</td><td>Keep the borrow on Aave and enter a <strong>3-month rate swap</strong> to hedge the float.</td></tr>
           <tr><td>Wildcat</td><td>Spin up a <strong>custom market</strong> with a 3-month term and whitelist the lenders.</td></tr>
@@ -761,7 +761,7 @@
     </div>
 
     <div class="callout" style="margin-top: 24px;">
-      <p style="margin:0;"><strong>The tell:</strong> notice how differently each one discovers the rate &ndash; an auction, a bond price, an order book, a token you hold, an intent, a pool&#x2019;s utilization, a swap, or simply whatever the borrower decrees. That mechanism is the whole story, and it&#x2019;s the spine of the matrix on the next page.</p>
+      <p style="margin:0;"><strong>The tell:</strong> notice how differently each one discovers the rate &ndash; an auction, a bond price, an order book, a two-sided offer, a token you hold, a pool&#x2019;s utilization, a swap, or simply whatever the borrower decrees. That mechanism is the whole story, and it&#x2019;s the spine of the matrix on the next page.</p>
     </div>
 
     <div class="footer"><span>Worked example</span><span>3-month, 10 ETH</span></div>
@@ -780,7 +780,7 @@
           <li><strong>Auction</strong> &ndash; Term (periodic, single fair price)</li>
           <li><strong>Bond price</strong> &ndash; TermMax (AMM) · Fira (supply/demand)</li>
           <li><strong>Order book</strong> &ndash; Secured Finance (CLOB + Itayose)</li>
-          <li><strong>Intent match</strong> &ndash; Morpho Midnight (managed liquidity)</li>
+          <li><strong>Offer book</strong> &ndash; Morpho Midnight (participants quote both sides)</li>
           <li><strong>Token you hold</strong> &ndash; Inverse DBR · <strong>Pool utilization</strong> &ndash; Exactly</li>
           <li><strong>Swap overlay</strong> &ndash; IPOR · <strong>Borrower decree</strong> &ndash; Wildcat</li>
         </ul>
@@ -815,7 +815,7 @@
         <div class="obs-num">05</div>
         <h3>Maturity &amp; scale</h3>
         <ul>
-          <li>Oldest: <strong>Inverse</strong> (~2020). Newest: <strong>Morpho Midnight</strong> (2026, pre-launch) and <strong>Fira</strong> (early 2026, big gross loan book but only ~$5M net TVL).</li>
+          <li>Oldest: <strong>Inverse</strong> (~2020). Newest: <strong>Morpho Midnight</strong> (live 21 Jul 2026, ~$1.9M) and <strong>Fira</strong> (early 2026, big gross loan book but only ~$5M net TVL).</li>
           <li>By net TVL, <strong>Wildcat</strong> (~$150M) leads, <strong>Liquity V2</strong> (~$74M) is next; most others &ndash; Fira included &ndash; are sub-$75M.</li>
           <li>Battle-tested through an exploit: <strong>Exactly</strong> (and Inverse, twice). <strong>Notional</strong>, by contrast, did not survive the Balancer hack.</li>
         </ul>
@@ -825,7 +825,7 @@
         <h3>For an institutional / RWA lens</h3>
         <ul>
           <li>The real balance sheets sit one tier up: <strong>Maple</strong> (~$2.1B credit), <strong>Centrifuge</strong> (~$1.6B tranched funds) and a <strong>~$15B</strong> tokenized-Treasury market &ndash; far bigger than the DeFi-native primitives.</li>
-          <li>Among the natives, permissioned <strong>Wildcat</strong> maps closest to real financing; <strong>Morpho Midnight</strong> is the one to watch <em>if</em> it ships with institutional curator liquidity.</li>
+          <li>Among the natives, permissioned <strong>Wildcat</strong> maps closest to real financing. <strong>Morpho Midnight</strong> has now shipped, but deliberately narrow &ndash; one chain, one pair. The institutional question is no longer whether it launches but whether the <em>Vault adapter</em> lands, connecting Morpho&#x2019;s multi-billion curator liquidity to fixed-term paper.</li>
         </ul>
       </div>
     </div>
@@ -852,12 +852,12 @@
         <tbody>
           <tr>
             <td><span class="proto-dot" style="background:#1A1816;"></span><a href="https://morpho.org/" target="_blank">Morpho Midnight</a></td>
-            <td>Intent-based P2P matching in isolated, immutable markets</td>
+            <td>Offer-based fixed-rate credit; participants quote both sides of each isolated market</td>
             <td>Yes (fixed-maturity)</td>
-            <td>Intent matching + curators</td>
-            <td>Isolated, immutable markets</td>
-            <td><strong>Pre-mainnet</strong> &ndash; audited May&ndash;Jun 2026</td>
-            <td>EVM (planned)</td>
+            <td>Market participants&#x2019; offers (no IRM)</td>
+            <td>Overcollateralized, isolated markets</td>
+            <td><strong>Live 21 Jul 2026</strong> · ~$1.9M</td>
+            <td>Base (cbBTC/USDC only at launch)</td>
           </tr>
           <tr>
             <td><span class="proto-dot" style="background:#C44A36;"></span><a href="https://www.term.finance/" target="_blank">Term Finance</a></td>
@@ -942,41 +942,41 @@
           </tr>
           <tr class="matrix-takeaway">
             <td>Takeaway</td>
-            <td colspan="6">The field divides on one thing: <em>how the rate is discovered</em> &ndash; auction, bond price, order book, a token you hold, an intent, pool utilization, a swap, or simple borrower decree. Rank it by net TVL, the only honest cross-protocol ruler, and <strong>Wildcat (~$150M)</strong> leads with <strong>Liquity V2 (~$74M)</strong> behind it; everything else is under ~$75M. <strong>Fira</strong> shows a huge gross loan book that nets to <strong>~$5M</strong> &ndash; the loan book is real, the on-chain float is not. <strong>Notional (~$843M)</strong> is gone after the Balancer hack, and the most-hyped name, Morpho Midnight, <strong>still isn&#x2019;t live</strong>. (Sky&#x2019;s <strong>Spark</strong> lends ~$4.7B &ndash; but at a rate governance can change, so it is not a fixed term.)</td>
+            <td colspan="6">The field divides on one thing: <em>how the rate is discovered</em> &ndash; auction, bond price, order book, an offer, a token you hold, pool utilization, a swap, or simple borrower decree. Rank it by net TVL, the only honest cross-protocol ruler, and <strong>Wildcat (~$150M)</strong> leads with <strong>Liquity V2 (~$74M)</strong> behind it; everything else is under ~$75M. <strong>Fira</strong> shows a huge gross loan book that nets to <strong>~$5M</strong> &ndash; the loan book is real, the on-chain float is not. <strong>Notional (~$843M)</strong> is gone after the Balancer hack. And the most-hyped name, <strong>Morpho Midnight</strong>, is finally live &ndash; at <strong>~$1.9M</strong> on one pair on one chain, which is the most useful demand signal in this table. (Sky&#x2019;s <strong>Spark</strong> lends ~$4.7B &ndash; but at a rate governance can change, so it is not a fixed term.)</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <div class="footer"><span>Comparison matrix</span><span>TVL: DefiLlama, Jun 2026 · approximate</span></div>
+    <div class="footer"><span>Comparison matrix</span><span>TVL: DefiLlama, Jun 2026 · Midnight Aug 2026 · approximate</span></div>
   </section>
 
   <!-- ============ 06 – MORPHO MIDNIGHT ============ -->
   <section class="slide">
-    <div class="top-bar protocol-bar" data-slide="06 / 13"><span>The intent-based bet</span></div>
+    <div class="top-bar protocol-bar" data-slide="06 / 13"><span>The offer-book bet</span></div>
     <div class="protocol-badge" style="margin-bottom: 24px;">
       <span class="num-block">01</span>
-      <span class="name-block">Morpho Midnight <span class="prelaunch-badge" style="border-color:#F2EBDD; color:#F2EBDD;">Pre-launch</span></span>
+      <span class="name-block">Morpho Midnight <span class="prelaunch-badge" style="border-color:#F2EBDD; color:#F2EBDD;">Live 21 Jul 2026</span></span>
     </div>
-    <h2>Lenders and borrowers post <em>intents</em>.<br>The market matches them at a fixed rate.</h2>
+    <h2>Both sides <em>quote the rate</em>.<br>No curve, no oracle for price &ndash; just offers.</h2>
 
     <div class="two-col">
       <div>
-        <p>Midnight is the fixed-rate, fixed-term half of <strong>Morpho V2</strong> (the other half is Vaults V2). Instead of a shared pool, lenders and borrowers post <strong>intents</strong> &ndash; the rate and term they&#x2019;ll accept &ndash; and the protocol matches them in <strong>isolated, immutable, permissionlessly-created markets</strong>. Rate and risk are externalized to curators rather than baked into a utilization curve.</p>
-        <p>It is designed to <em>complement</em>, not replace, Morpho Blue&#x2019;s variable-rate pools, with institutional-grade fixed-rate lending as the explicit target. Non-custodial and EVM-native.</p>
+        <p>Midnight is Morpho&#x2019;s non-custodial protocol for <strong>fixed-rate, fixed-term credit</strong> &ndash; a separate primitive alongside Morpho Blue&#x2019;s variable-rate pools, not a layer on top of them. There is <strong>no interest-rate model</strong>: lenders and borrowers <em>quote both sides</em> of each isolated market, and the rate is whatever the offers clear at. Rates are set by participants and are explicitly not guaranteed.</p>
+        <p>Credit risk is <em>collateralized, not ranked</em> &ndash; each lender holds their own overcollateralized position. Midnight removes rate and term uncertainty; it does not tranche or subordinate default risk.</p>
       </div>
       <div>
         <h4>Why it matters</h4>
         <ul style="padding-left: 18px;">
-          <li>The most credible attempt to make fixed-rate <strong>scale</strong> via managed liquidity rather than fragmented per-maturity pools.</li>
-          <li>Backed by Morpho&#x2019;s existing distribution and curator ecosystem.</li>
+          <li>The largest curator-vault ecosystem in DeFi now frames itself around <strong>two</strong> market structures: variable-rate open-term, and fixed-rate fixed-term.</li>
+          <li>An open offer book quoting fixed-term USDC against pristine collateral becomes a <strong>public benchmark</strong> &ndash; every negotiated fixed coupon elsewhere now has a visible market rate to clear.</li>
         </ul>
         <div class="callout" style="margin-top: 18px;">
           <h4>Status check &ndash; read this</h4>
-          <p>The whitepaper and codebase went <strong>public in late May 2026</strong>; a Cantina audit competition ran <strong>29 May &ndash; 12 Jun 2026</strong>. As of this brief it is <strong>audited but not yet on mainnet</strong> &ndash; don&#x2019;t assume it&#x2019;s usable.</p>
+          <p>Shipped <strong>21 July 2026</strong>, but deliberately throttled: <strong>Base only, cbBTC/USDC only</strong>, a limited set of maturities. TVL is <strong>~$1.9M</strong> &ndash; against the multi-billion Morpho network it plugs into, that is a rounding error. Auto-rolling, callbacks and a <strong>Vault adapter</strong> are roadmap, not shipped. The launch answered &ldquo;does it exist&rdquo;; it has not yet answered &ldquo;does anyone want it.&rdquo;</p>
         </div>
       </div>
     </div>
-    <div class="footer"><span>01 · Morpho Midnight</span><span>Intent-based · pre-launch</span></div>
+    <div class="footer"><span>01 · Morpho Midnight</span><span>Offer-based · live 21 Jul 2026</span></div>
   </section>
 
   <!-- ============ 07 – TERM FINANCE ============ -->
@@ -1248,13 +1248,13 @@
 
     <h1 style="margin-top: 24px;">The DeFi-native fixed-rate field is<br>still a <em>niche</em>. The institutional money<br>has already moved <em>next door</em><span class="accent-dot">.</span></h1>
 
-    <p class="subtitle" style="color:#B5AC9D; max-width: 880px; margin-top: 8px;">The honest take: by net TVL the DeFi-native field is <strong>Wildcat</strong> (~$150M) and <strong>Liquity V2</strong> (~$74M), and not much else &ndash; <strong>Fira</strong>&#x2019;s headline nets to ~$5M, Notional is gone, Morpho Midnight still isn&#x2019;t live. The mechanisms are inventive; the demand is not here yet. The real balance sheets already moved next door, into ~$15B of tokenized Treasuries and the <strong>Maple</strong> / <strong>Centrifuge</strong> credit tier that dwarfs this whole list. So the open question isn&#x2019;t whether fixed-rate borrowing matters on-chain &ndash; in TradFi it is most of credit &ndash; but what finally brings the volume: a better mechanism, clearer regulation, or institutional distribution?</p>
+    <p class="subtitle" style="color:#B5AC9D; max-width: 880px; margin-top: 8px;">The honest take: by net TVL the DeFi-native field is <strong>Wildcat</strong> (~$150M) and <strong>Liquity V2</strong> (~$74M), and not much else &ndash; <strong>Fira</strong>&#x2019;s headline nets to ~$5M, Notional is gone, and <strong>Morpho Midnight</strong> finally shipped in July only to draw ~$1.9M. That last one is the cleanest test the field has had: the best-funded team in on-chain lending built the mechanism properly, and the volume still did not appear. The mechanisms are inventive; the demand is not here yet. The real balance sheets already moved next door, into ~$15B of tokenized Treasuries and the <strong>Maple</strong> / <strong>Centrifuge</strong> credit tier that dwarfs this whole list. So the open question isn&#x2019;t whether fixed-rate borrowing matters on-chain &ndash; in TradFi it is most of credit &ndash; but what finally brings the volume: a better mechanism, clearer regulation, or institutional distribution?</p>
 
     <div class="closing-stats">
       <div class="stat-block"><div class="stat-sm"><span class="accent">10</span></div><p>core fixed-rate borrowing protocols</p></div>
       <div class="stat-block"><div class="stat-sm"><span class="accent">~$300M</span></div><p>native field size · Wildcat leads (~$150M)</p></div>
       <div class="stat-block"><div class="stat-sm"><span class="accent">~$15B</span></div><p>tokenized Treasuries next door</p></div>
-      <div class="stat-block"><div class="stat-sm"><span class="accent">1</span></div><p>still pre-mainnet · Morpho Midnight</p></div>
+      <div class="stat-block"><div class="stat-sm"><span class="accent">~$1.9M</span></div><p>Morpho Midnight, live since 21 Jul</p></div>
     </div>
     <div class="footer"><span style="color:#B5AC9D;">By <a href="https://www.linkedin.com/in/mishablank/" target="_blank" rel="noopener" style="color:#F2EBDD; text-decoration:none; border-bottom:1px solid var(--accent);">Mike Blank</a> · R3 landscape brief</span><span style="color:#B5AC9D;">Verified June 2026 · rev. Aug 2026 · DefiLlama + protocol docs</span></div>
   </section>
