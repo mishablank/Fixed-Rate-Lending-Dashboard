@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fixed-Rate Borrowing Protocols – DeFi Landscape Brief</title>
-<meta name="description" content="A side-by-side of the ten DeFi protocols that let a borrower lock a fixed interest rate – mechanism, TVL and status as of August 2026 – plus the ~$15B institutional RWA tier next door.">
+<meta name="description" content="A side-by-side of eleven DeFi protocols that let a borrower lock a fixed interest rate – ten live and Iris Credit on testnet – plus the ~$15B institutional RWA tier next door.">
 
 <!-- Favicon – inline SVG padlock (the Rate.Lock motif); no external file needed -->
 <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20viewBox%3D%220%200%2032%2032%22%3E%3Crect%20width%3D%2232%22%20height%3D%2232%22%20rx%3D%227%22%20fill%3D%22%231A1816%22%2F%3E%3Cpath%20d%3D%22M11%2015%20V12%20a5%205%200%200%201%2010%200%20V15%22%20fill%3D%22none%22%20stroke%3D%22%23F2EBDD%22%20stroke-width%3D%222.4%22%20stroke-linecap%3D%22round%22%2F%3E%3Crect%20x%3D%228.5%22%20y%3D%2214.5%22%20width%3D%2215%22%20height%3D%2210.6%22%20rx%3D%222.2%22%20fill%3D%22%23C44A36%22%2F%3E%3Ccircle%20cx%3D%2216%22%20cy%3D%2218.7%22%20r%3D%221.7%22%20fill%3D%22%231A1816%22%2F%3E%3Crect%20x%3D%2215.2%22%20y%3D%2219.5%22%20width%3D%221.6%22%20height%3D%223.4%22%20rx%3D%220.8%22%20fill%3D%22%231A1816%22%2F%3E%3C%2Fsvg%3E">
@@ -17,18 +17,18 @@
      when hosted. Once you know the URL, replace both with e.g.
      https://your-domain.com/Fixed-rate-v4-og.png (and set og:url to the page). -->
 <meta property="og:type" content="article">
-<meta property="og:title" content="Ten ways to lock a borrowing rate. Now all ten are live.">
-<meta property="og:description" content="A side-by-side of the ten DeFi protocols that let a borrower lock a fixed interest rate – mechanism, TVL and status (August 2026) – plus the ~$15B institutional RWA tier next door.">
+<meta property="og:title" content="Eleven ways to lock a borrowing rate. Ten live, Iris Credit next.">
+<meta property="og:description" content="A side-by-side of eleven DeFi fixed-rate protocols – ten live and Iris Credit on testnet – plus the ~$15B institutional RWA tier next door.">
 <meta property="og:image" content="Fixed-rate-v4-og.png">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
-<meta property="og:image:alt" content="Rate.Lock landscape brief – ten DeFi fixed-rate protocols, ~$300M field led by Wildcat, ~$15B tokenized Treasuries next door, Morpho Midnight now live.">
+<meta property="og:image:alt" content="Rate.Lock landscape brief – eleven DeFi fixed-rate protocols, ten live, Iris Credit on testnet, and the ~$15B tokenized-Treasury tier next door.">
 <meta property="og:site_name" content="R3 – DeFi Landscape Brief">
 
 <!-- Twitter / X card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="Ten ways to lock a borrowing rate. Now all ten are live.">
-<meta name="twitter:description" content="A side-by-side of the ten DeFi protocols that let a borrower lock a fixed interest rate – mechanism, TVL and status (August 2026) – plus the ~$15B institutional RWA tier next door.">
+<meta name="twitter:title" content="Eleven ways to lock a borrowing rate. Ten live, Iris Credit next.">
+<meta name="twitter:description" content="A side-by-side of eleven DeFi fixed-rate protocols – ten live and Iris Credit on testnet – plus the ~$15B institutional RWA tier next door.">
 <meta name="twitter:image" content="Fixed-rate-v4-og.png">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -656,15 +656,15 @@
   <section class="slide cover-slide">
     <span class="label" style="color: var(--accent); margin-bottom: 14px;">Fixed-Rate Borrowing in DeFi · Landscape Brief · June 2026 · updated August 2026</span>
 
-    <h1 class="cover" style="font-size: 76px; margin: 12px 0 22px;">Ten ways to lock<br>a borrowing rate. <em>Now<br>all ten are live</em><span class="accent-dot">.</span></h1>
+    <h1 class="cover" style="font-size: 76px; margin: 12px 0 22px;">Eleven ways to lock<br>a borrowing rate. <em>Ten live,<br>one coming next</em><span class="accent-dot">.</span></h1>
 
     <p class="subtitle" style="font-size: 19px; max-width: 940px; margin-bottom: 32px;">
-      Every other corner of DeFi lets the borrowing rate float. Here, ten teams are trying to nail it down for a fixed term &ndash; the niche beneath variable-rate giants like Aave and Morpho Blue. Strip away the mechanism names and they are ten bets on one hard problem: how to make a fixed rate liquid when every maturity is its own market. The last holdout shipped on <strong>21 July 2026</strong>, when Morpho launched <strong>Midnight</strong> &ndash; and it drew <strong>~$1.9M</strong>, which tells you more about the demand than any mechanism does. Ten live mechanisms, the whole DeFi-native field worth a few hundred million and led by borrower-credit shop Wildcat. The honest caveat: the institutional RWA tier next door is ~50&times; bigger, and that is where the real money already sits.
+      Every other corner of DeFi lets the borrowing rate float. Here, eleven teams are trying to nail it down for a fixed term &ndash; the niche beneath variable-rate giants like Aave and Morpho Blue. Ten protocols are live. The eleventh, <strong>Iris Credit</strong>, launched a curated testnet on <strong>11 August 2026</strong> with a different answer to the liquidity problem: borrowers sign intents, bonded solvers compete on fixed-rate quotes, then fund and manage the loan through existing variable-rate venues. It is an origination layer, not another maturity pool; mainnet is still ahead. The live DeFi-native field remains worth only a few hundred million and led by borrower-credit shop Wildcat. The honest caveat: the institutional RWA tier next door is ~50&times; bigger, and that is where the real money already sits.
     </p>
 
     <div class="two-col-asym" style="gap: 56px;">
       <div>
-        <h4 style="margin-bottom: 14px;">The ten core protocols</h4>
+        <h4 style="margin-bottom: 14px;">The eleven core protocols</h4>
         <ul style="list-style: none; padding: 0; margin: 0; font-size: 14.5px; line-height: 1.5;">
           <li style="padding: 9px 0; border-bottom: 1px solid var(--rule);"><strong>Morpho Midnight</strong> · offer-based fixed-term credit markets <span class="prelaunch-badge">Live 21 Jul &middot; ~$1.9M</span></li>
           <li style="padding: 9px 0; border-bottom: 1px solid var(--rule);"><strong>Term Finance</strong> · weekly sealed-bid rate auctions</li>
@@ -674,6 +674,7 @@
           <li style="padding: 9px 0; border-bottom: 1px solid var(--rule);"><strong>Inverse Finance (FiRM)</strong> · DOLA Borrowing Rights (DBR)</li>
           <li style="padding: 9px 0; border-bottom: 1px solid var(--rule);"><strong>Exactly Protocol</strong> · per-maturity fixed-rate pools</li>
           <li style="padding: 9px 0; border-bottom: 1px solid var(--rule);"><strong>IPOR</strong> · interest-rate swaps / hedging overlay</li>
+          <li style="padding: 9px 0; border-bottom: 1px solid var(--rule);"><strong>Iris Credit</strong> · bonded-solvers quote against variable-rate venues <span class="prelaunch-badge">Testnet live · mainnet next</span></li>
           <li style="padding: 9px 0; border-bottom: 1px solid var(--rule);"><strong>Wildcat Finance</strong> · borrower-set custom credit markets</li>
           <li style="padding: 9px 0;"><strong>Liquity V2</strong> · borrower-set rate on the BOLD stablecoin</li>
         </ul>
@@ -690,10 +691,10 @@
 
     <div class="cover-meta">
       <div class="col"><h4>Author</h4><p><a href="https://www.linkedin.com/in/mishablank/" target="_blank" rel="noopener" style="color: var(--ink); text-decoration: none; border-bottom: 1px solid var(--accent);">Mike Blank</a></p></div>
-      <div class="col"><h4>As of</h4><p>1 Aug 2026</p></div>
+      <div class="col"><h4>As of</h4><p>16 Aug 2026</p></div>
       <div class="col"><h4>Sources</h4><p>DefiLlama · protocol docs</p></div>
       <div class="col"><h4>Scope</h4><p>Fixed-rate, fixed-term borrowing</p></div>
-      <div class="col"><h4>Field</h4><p>10 core + adjacents</p></div>
+      <div class="col"><h4>Field</h4><p>11 core · 10 live</p></div>
     </div>
   </section>
 
@@ -723,7 +724,7 @@
           <li><strong>Rollover risk</strong> &ndash; someone has to refinance at maturity.</li>
           <li><strong>Capital-efficiency drag</strong> &ndash; matched terms are harder to keep fully utilized than an always-on pool.</li>
         </ul>
-        <p style="font-size: 13.5px; color: var(--muted); margin-top: 12px;">The ten protocols ahead are really ten <em>different bets</em> on how to beat these three problems.</p>
+        <p style="font-size: 13.5px; color: var(--muted); margin-top: 12px;">The eleven protocols ahead are really eleven <em>different bets</em> on how to beat these three problems.</p>
       </div>
     </div>
 
@@ -737,8 +738,8 @@
 
   <!-- ============ 03 – WORKED EXAMPLE ============ -->
   <section class="slide">
-    <div class="top-bar" data-slide="03 / 13"><span>One borrower, nine routes</span></div>
-    <h2>Borrow <em>10 ETH</em> for three months.<br>Nine ways to lock the rate.</h2>
+    <div class="top-bar" data-slide="03 / 13"><span>One borrower, ten routes</span></div>
+    <h2>Borrow <em>10 ETH</em> for three months.<br>Ten ways to lock the rate.</h2>
     <p class="subtitle">Same goal &ndash; a predictable cost on a 3-month loan &ndash; routed through each protocol&#x2019;s native mechanism.</p>
 
     <div class="matrix-wrap">
@@ -755,13 +756,14 @@
           <tr><td>Morpho Midnight</td><td>Take a standing <strong>offer</strong> &ndash; or quote your own &ndash; in the relevant fixed-term market. <span style="color:var(--muted);">At launch: cbBTC/USDC on Base only, so a 3-month ETH borrow isn&#x2019;t routable here yet.</span></td></tr>
           <tr><td>Exactly</td><td>Lock the rate straight from the <strong>3-month maturity pool</strong> (priced off its utilization).</td></tr>
           <tr><td>IPOR</td><td>Keep the borrow on Aave and enter a <strong>3-month rate swap</strong> to hedge the float.</td></tr>
+          <tr><td>Iris Credit</td><td>Sign a gasless <strong>loan intent</strong>; bonded solvers compete through an off-chain RFQ, and the winner settles through an allowed variable-rate venue. <span style="color:var(--muted);">The curated testnet is live; a public mainnet route is not available yet.</span></td></tr>
           <tr><td>Wildcat</td><td>Spin up a <strong>custom market</strong> with a 3-month term and whitelist the lenders.</td></tr>
         </tbody>
       </table>
     </div>
 
     <div class="callout" style="margin-top: 24px;">
-      <p style="margin:0;"><strong>The tell:</strong> notice how differently each one discovers the rate &ndash; an auction, a bond price, an order book, a two-sided offer, a token you hold, a pool&#x2019;s utilization, a swap, or simply whatever the borrower decrees. That mechanism is the whole story, and it&#x2019;s the spine of the matrix on the next page.</p>
+      <p style="margin:0;"><strong>The tell:</strong> notice how differently each one discovers the rate &ndash; an auction, a bond price, an order book, a two-sided offer, a token you hold, a pool&#x2019;s utilization, a swap, competing solver quotes, or simply whatever the borrower decrees. That mechanism is the whole story, and it&#x2019;s the spine of the matrix on the next page.</p>
     </div>
 
     <div class="footer"><span>Worked example</span><span>3-month, 10 ETH</span></div>
@@ -770,7 +772,7 @@
   <!-- ============ 04 – CROSS-CUTTING ============ -->
   <section class="slide">
     <div class="top-bar" data-slide="04 / 13"><span>How to read the field</span></div>
-    <h2>Ten protocols, sliced <em>five ways</em>.</h2>
+    <h2>Eleven protocols, sliced <em>six ways</em>.</h2>
 
     <div class="obs-grid" style="margin-top: 16px;">
       <div class="obs">
@@ -781,6 +783,7 @@
           <li><strong>Bond price</strong> &ndash; TermMax (AMM) · Fira (supply/demand)</li>
           <li><strong>Order book</strong> &ndash; Secured Finance (CLOB + Itayose)</li>
           <li><strong>Offer book</strong> &ndash; Morpho Midnight (participants quote both sides)</li>
+          <li><strong>Solver RFQ</strong> &ndash; Iris Credit (bonded solvers compete per intent)</li>
           <li><strong>Token you hold</strong> &ndash; Inverse DBR · <strong>Pool utilization</strong> &ndash; Exactly</li>
           <li><strong>Swap overlay</strong> &ndash; IPOR · <strong>Borrower decree</strong> &ndash; Wildcat</li>
         </ul>
@@ -790,6 +793,7 @@
         <h3>Collateral model</h3>
         <ul>
           <li><strong>Overcollateralized crypto</strong> &ndash; Term, TermMax, Fira, Secured Finance, Inverse, Exactly</li>
+          <li><strong>Venue collateral + solver bond</strong> &ndash; Iris Credit (the venue lends; the bond guarantees the fixed quote)</li>
           <li><strong>Undercollateralized / permissioned</strong> &ndash; Wildcat, Maple</li>
           <li>This split, more than mechanism, decides who can actually use a protocol.</li>
         </ul>
@@ -809,13 +813,14 @@
           <li>Most offer <strong>true fixed terms</strong>.</li>
           <li><strong>Inverse&#x2019;s DBR</strong> trades a fixed end-date for rate certainty + duration flexibility.</li>
           <li><strong>IPOR</strong> adds predictability on top of an existing Aave borrow.</li>
+          <li><strong>Iris Credit</strong> lets the winning solver refinance across allowed venues while the borrower keeps the quoted fixed repayment.</li>
         </ul>
       </div>
       <div class="obs">
         <div class="obs-num">05</div>
         <h3>Maturity &amp; scale</h3>
         <ul>
-          <li>Oldest: <strong>Inverse</strong> (~2020). Newest: <strong>Morpho Midnight</strong> (live 21 Jul 2026, ~$1.9M) and <strong>Fira</strong> (early 2026, big gross loan book but only ~$5M net TVL).</li>
+          <li>Oldest: <strong>Inverse</strong> (~2020). Newest live: <strong>Morpho Midnight</strong> (21 Jul 2026, ~$1.9M). <strong>Iris Credit</strong> is newer still, with a curated testnet live since 11 Aug 2026 but no public mainnet TVL.</li>
           <li>By net TVL, <strong>Wildcat</strong> (~$150M) leads, <strong>Liquity V2</strong> (~$74M) is next; most others &ndash; Fira included &ndash; are sub-$75M.</li>
           <li>Battle-tested through an exploit: <strong>Exactly</strong> (and Inverse, twice). <strong>Notional</strong>, by contrast, did not survive the Balancer hack.</li>
         </ul>
@@ -825,7 +830,7 @@
         <h3>For an institutional / RWA lens</h3>
         <ul>
           <li>The real balance sheets sit one tier up: <strong>Maple</strong> (~$2.1B credit), <strong>Centrifuge</strong> (~$1.6B tranched funds) and a <strong>~$15B</strong> tokenized-Treasury market &ndash; far bigger than the DeFi-native primitives.</li>
-          <li>Among the natives, permissioned <strong>Wildcat</strong> maps closest to real financing. <strong>Morpho Midnight</strong> has now shipped, but deliberately narrow &ndash; one chain, one pair. The institutional question is no longer whether it launches but whether the <em>Vault adapter</em> lands, connecting Morpho&#x2019;s multi-billion curator liquidity to fixed-term paper.</li>
+          <li>Among the natives, permissioned <strong>Wildcat</strong> maps closest to real financing. <strong>Iris Credit</strong> is explicitly courting structured borrowers and desks, but its solver-bond model is still only being exercised on a curated testnet.</li>
         </ul>
       </div>
     </div>
@@ -923,6 +928,15 @@
             <td>Ethereum, Arbitrum</td>
           </tr>
           <tr>
+            <td><span class="proto-dot" style="background:#7A6E4F;"></span><a href="https://lens.iris.credit/posts/about-iris" target="_blank" rel="noopener">Iris Credit</a></td>
+            <td>Intent-based origination; bonded solvers fund through existing variable-rate venues and actively manage the liability</td>
+            <td>Yes (intent specifies duration)</td>
+            <td>Competitive off-chain solver RFQ, settled on-chain</td>
+            <td>Underlying venue collateral; solver bond covers negative carry</td>
+            <td><strong>Testnet live 11 Aug 2026</strong> · mainnet pending · TVL n/a</td>
+            <td>Venues and chains not yet announced</td>
+          </tr>
+          <tr>
             <td><span class="proto-dot" style="background:#C44A36;"></span><a href="https://wildcat.finance/" target="_blank">Wildcat</a></td>
             <td>Borrower-led custom credit markets</td>
             <td>Yes (borrower-set)</td>
@@ -942,12 +956,12 @@
           </tr>
           <tr class="matrix-takeaway">
             <td>Takeaway</td>
-            <td colspan="6">The field divides on one thing: <em>how the rate is discovered</em> &ndash; auction, bond price, order book, an offer, a token you hold, pool utilization, a swap, or simple borrower decree. Rank it by net TVL, the only honest cross-protocol ruler, and <strong>Wildcat (~$150M)</strong> leads with <strong>Liquity V2 (~$74M)</strong> behind it; everything else is under ~$75M. <strong>Fira</strong> shows a huge gross loan book that nets to <strong>~$5M</strong> &ndash; the loan book is real, the on-chain float is not. <strong>Notional (~$843M)</strong> is gone after the Balancer hack. And the most-hyped name, <strong>Morpho Midnight</strong>, is finally live &ndash; at <strong>~$1.9M</strong> on one pair on one chain, which is the most useful demand signal in this table. (Sky&#x2019;s <strong>Spark</strong> lends ~$4.7B &ndash; but at a rate governance can change, so it is not a fixed term.)</td>
+            <td colspan="6">The field divides on one thing: <em>how the rate is discovered</em> &ndash; auction, bond price, order book, an offer, a token you hold, pool utilization, a swap, a solver RFQ, or simple borrower decree. Rank the live protocols by net TVL, the only honest cross-protocol ruler, and <strong>Wildcat (~$150M)</strong> leads with <strong>Liquity V2 (~$74M)</strong> behind it; everything else is under ~$75M. <strong>Iris Credit</strong> deliberately breaks the TVL comparison: it plans to originate against liquidity already sitting in variable-rate venues, with solver bonds guaranteeing the fixed quote. That could solve maturity-pool fragmentation, but a curated testnet is still mechanism validation, not public-market demand evidence.</td>
           </tr>
         </tbody>
       </table>
     </div>
-    <div class="footer"><span>Comparison matrix</span><span>TVL: DefiLlama, Jun 2026 · Midnight Aug 2026 · approximate</span></div>
+    <div class="footer"><span>Comparison matrix</span><span>TVL: DefiLlama, Jun 2026 · Midnight Aug 2026 · Iris testnet Aug 2026</span></div>
   </section>
 
   <!-- ============ 06 – MORPHO MIDNIGHT ============ -->
@@ -1083,10 +1097,10 @@
     <div class="footer"><span>06&ndash;07 · Inverse &amp; Exactly</span><span>Borrowing rights · maturity pools</span></div>
   </section>
 
-  <!-- ============ 10 – OVERLAY & BORROWER-LED ============ -->
+  <!-- ============ 10 – OVERLAY, ORIGINATION & BORROWER-LED ============ -->
   <section class="slide">
-    <div class="top-bar" data-slide="10 / 13"><span>Overlay &amp; borrower-led</span></div>
-    <h2>Hedge the float, or <em>write your own terms</em>.</h2>
+    <div class="top-bar" data-slide="10 / 13"><span>Overlay &amp; origination</span></div>
+    <h2>Hedge the float, <em>underwrite it</em>,<br>or write your own terms.</h2>
 
     <div style="margin-top: 12px;">
       <div class="protocol-grid">
@@ -1124,13 +1138,27 @@
         </div>
         <div class="edge"><span class="edge-label">Edge</span>Name your own rate &ndash; and wear the redemption risk that comes with it.</div>
       </div>
+
+      <div class="protocol-grid">
+        <div class="num">11</div>
+        <div class="body">
+          <h3><a href="https://lens.iris.credit/posts/about-iris" target="_blank" rel="noopener" style="color:var(--ink); text-decoration:none; border-bottom:1px solid var(--accent);">Iris Credit</a> <span class="prelaunch-badge">Testnet live · mainnet next</span></h3>
+          <p>An <strong>intent-based fixed-rate origination layer</strong> built on existing variable-rate lending markets. A borrower signs the collateral, amount, duration, maximum rate and allowed venues. Bonded solvers compete through an off-chain RFQ; the winning quote settles on-chain, and that solver can refinance across allowed venues while guaranteeing the borrower&#x2019;s fixed repayment.</p>
+          <ul>
+            <li>The underlying venue provides the lending capital; the solver&#x2019;s shared bond covers negative carry when realized variable funding costs exceed the fixed quote.</li>
+            <li>No isolated fixed-maturity liquidity has to be bootstrapped. The tradeoff is a new dependency on solver pricing, active liability management and enough bonded capital to make the guarantee credible.</li>
+            <li>Announced 29 Apr 2026; curated testnet live 11 Aug 2026. Mainnet remains pending, with no public TVL or mainnet launch date disclosed.</li>
+          </ul>
+        </div>
+        <div class="edge"><span class="edge-label">Edge</span>Aggregates existing lending liquidity instead of splitting new capital across maturity pools.</div>
+      </div>
     </div>
 
     <div class="glossary-bar" style="margin-top: 22px;">
       <strong>Two honourable mentions on rate-setting.</strong> <strong style="color:var(--ink);">Spark</strong> (Sky / ex-MakerDAO) lends USDS at a governance-administered &ldquo;Transparent Rate&rdquo; &ndash; stable in the short run but changeable by governance, so <em>not</em> a true fixed term &ndash; yet at ~$4.7B it is larger than this entire list combined.<span class="sep">|</span><strong style="color:var(--ink);">Rheo</strong> (formerly Size Credit) runs a genuine order-book fixed-rate model on Base + Ethereum, but is now near-dormant (~$34k).
     </div>
 
-    <div class="footer"><span>08&ndash;10 · IPOR, Wildcat &amp; Liquity V2</span><span>Overlay · borrower-defined</span></div>
+    <div class="footer"><span>08&ndash;11 · Four rate-setting models</span><span>Overlay · solver RFQ</span></div>
   </section>
 
   <!-- ============ 11 – TOKENIZED T-BILLS ============ -->
@@ -1248,10 +1276,10 @@
 
     <h1 style="margin-top: 24px;">The DeFi-native fixed-rate field is<br>still a <em>niche</em>. The institutional money<br>has already moved <em>next door</em><span class="accent-dot">.</span></h1>
 
-    <p class="subtitle" style="color:#B5AC9D; max-width: 880px; margin-top: 8px;">The honest take: by net TVL the DeFi-native field is <strong>Wildcat</strong> (~$150M) and <strong>Liquity V2</strong> (~$74M), and not much else &ndash; <strong>Fira</strong>&#x2019;s headline nets to ~$5M, Notional is gone, and <strong>Morpho Midnight</strong> finally shipped in July only to draw ~$1.9M. That last one is the cleanest test the field has had: the best-funded team in on-chain lending built the mechanism properly, and the volume still did not appear. The mechanisms are inventive; the demand is not here yet. The real balance sheets already moved next door, into ~$15B of tokenized Treasuries and the <strong>Maple</strong> / <strong>Centrifuge</strong> credit tier that dwarfs this whole list. So the open question isn&#x2019;t whether fixed-rate borrowing matters on-chain &ndash; in TradFi it is most of credit &ndash; but what finally brings the volume: a better mechanism, clearer regulation, or institutional distribution?</p>
+    <p class="subtitle" style="color:#B5AC9D; max-width: 880px; margin-top: 8px;">The honest take: by net TVL the live DeFi-native field is <strong>Wildcat</strong> (~$150M) and <strong>Liquity V2</strong> (~$74M), and not much else &ndash; <strong>Fira</strong>&#x2019;s headline nets to ~$5M, Notional is gone, and <strong>Morpho Midnight</strong> finally shipped in July only to draw ~$1.9M. <strong>Iris Credit</strong> attacks the supply bottleneck from the other direction: do not build fixed-rate pools at all; make bonded solvers transform existing variable-rate liquidity into fixed-rate loans. That is the most interesting new mechanism here, but a curated testnet is not evidence of public demand. The real balance sheets still sit next door, in ~$15B of tokenized Treasuries and the <strong>Maple</strong> / <strong>Centrifuge</strong> credit tier. So the open question is not whether fixed-rate borrowing matters &ndash; in TradFi it is most of credit &ndash; but whether solver-based origination can bring volume that isolated fixed-term markets could not.</p>
 
     <div class="closing-stats">
-      <div class="stat-block"><div class="stat-sm"><span class="accent">10</span></div><p>core fixed-rate borrowing protocols</p></div>
+      <div class="stat-block"><div class="stat-sm"><span class="accent">11</span></div><p>core protocols · 10 live, Iris next</p></div>
       <div class="stat-block"><div class="stat-sm"><span class="accent">~$300M</span></div><p>native field size · Wildcat leads (~$150M)</p></div>
       <div class="stat-block"><div class="stat-sm"><span class="accent">~$15B</span></div><p>tokenized Treasuries next door</p></div>
       <div class="stat-block"><div class="stat-sm"><span class="accent">~$1.9M</span></div><p>Morpho Midnight, live since 21 Jul</p></div>

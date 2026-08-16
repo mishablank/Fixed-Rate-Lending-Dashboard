@@ -1,13 +1,13 @@
 # Fixed-Rate Protocols
 
-> **Ten ways to lock a borrowing rate on-chain – and the honest accounting of how little money is actually behind them.**
+> **Eleven ways to lock a borrowing rate on-chain – ten live, one on testnet, and an honest accounting of how little money is actually behind them.**
 
 [![Live](https://img.shields.io/badge/live-fixedrateprotocol.com-C44A36.svg)](https://fixedrateprotocol.com/)
 [![Pages](https://img.shields.io/badge/brief-13%20pages-1A1816.svg)](https://fixedrateprotocol.com/)
 [![Data](https://img.shields.io/badge/data-verified%20Jun%202026-7A6E4F.svg)](#data--methodology)
 [![Build](https://img.shields.io/badge/build-none%20·%20single%20file-blue.svg)](#how-its-built)
 
-Almost every corner of DeFi lets the borrowing rate float. **Fixed-Rate Protocols** – published at [fixedrateprotocol.com](https://fixedrateprotocol.com/) under the *Rate.Lock* motif – is a landscape brief on the small set of teams trying to nail the rate down for a fixed term: the niche living beneath variable-rate giants like Aave and Morpho Blue. It walks ten core protocols page by page, routes one worked example (borrow 10 ETH for three months) through nine different rate-discovery mechanisms, and then does the thing most landscape decks skip – nets the TVL out and admits how small the field really is.
+Almost every corner of DeFi lets the borrowing rate float. **Fixed-Rate Protocols** – published at [fixedrateprotocol.com](https://fixedrateprotocol.com/) under the *Rate.Lock* motif – is a landscape brief on the small set of teams trying to nail the rate down for a fixed term: the niche living beneath variable-rate giants like Aave and Morpho Blue. It walks eleven core protocols page by page, routes one worked example (borrow 10 ETH for three months) through ten different rate-discovery mechanisms, and then does the thing most landscape decks skip – nets the TVL out and admits how small the live field really is.
 
 The conclusion is deliberately unflattering to its own subject. By net TVL the DeFi-native field is Wildcat (~$150M) and Liquity V2 (~$74M) and not much else, while the institutional RWA tier next door – tokenized Treasuries, Maple, Centrifuge – is roughly 50× bigger. The mechanisms are inventive; the demand has not shown up yet.
 
@@ -19,19 +19,19 @@ Written as an R3 landscape brief; published in case it saves anyone else the for
 
 A single scrolling deck of 13 numbered pages plus a closing panel:
 
-- **Cover** – the field at a glance: ten mechanisms all now live, ~$300M combined, and the caveat that the RWA tier next door dwarfs it.
+- **Cover** – the field at a glance: ten live protocols, Iris Credit on testnet, ~$300M across the live field, and the caveat that the RWA tier next door dwarfs it.
 - **02 · Why the niche exists** – what fixed-rate and fixed-term actually mean, why borrowers want them (cash-flow planning, institutional mandates, hedging, structured products), and the three structural reasons the slice stays small: liquidity fragmentation across maturities, rollover risk, and capital-efficiency drag.
-- **03 · Worked example** – *borrow 10 ETH for three months*, routed through nine native mechanisms side by side. The clearest single page for seeing how differently each protocol discovers a rate.
-- **04 · Cross-cutting** – the field sliced five ways: rate discovery, collateral model, capital efficiency and leverage, flexibility vs. predictability, and maturity/scale.
-- **05 · The comparison matrix** – all ten protocols against mechanism, fixed term, rate-setter, collateral/risk, status and TVL, and chains.
-- **06–10 · Protocol deep-dives** – Morpho Midnight; Term Finance; the tokenized-bond family (TermMax, Fira, Secured Finance); rate-as-a-token and per-maturity pools (Inverse FiRM, Exactly); and the overlay/borrower-led group (IPOR, Wildcat, Liquity V2).
+- **03 · Worked example** – *borrow 10 ETH for three months*, routed through ten native mechanisms side by side. The clearest single page for seeing how differently each protocol discovers a rate.
+- **04 · Cross-cutting** – the field sliced six ways: rate discovery, collateral model, capital efficiency and leverage, flexibility vs. predictability, maturity/scale, and the institutional/RWA lens.
+- **05 · The comparison matrix** – all eleven protocols against mechanism, fixed term, rate-setter, collateral/risk, status and TVL, and chains.
+- **06–10 · Protocol deep-dives** – Morpho Midnight; Term Finance; the tokenized-bond family (TermMax, Fira, Secured Finance); rate-as-a-token and per-maturity pools (Inverse FiRM, Exactly); and the overlay/origination/borrower-led group (IPOR, Iris Credit, Wildcat, Liquity V2).
 - **11–12 · The institutional / RWA frontier** – the ~$15B tokenized-Treasury market that functions as the on-chain risk-free benchmark, then the credit tier where real balance sheets sit (Maple, Centrifuge, Clearpool).
 - **13 · Adjacent and wound down** – the neighbours and the graveyard: Notional, Yield Protocol, Element/DELV, Goldfinch, TrueFi, plus an explicit note on what was cut from the list and why.
 - **Closing** – the honest take, and the open question: what finally brings the volume – a better mechanism, clearer regulation, or institutional distribution?
 
-## The ten protocols
+## The eleven protocols
 
-| Protocol | Rate discovered by | Status · net TVL (Jun 2026) |
+| Protocol | Rate discovered by | Status · TVL snapshot |
 |---|---|---|
 | [Wildcat](https://wildcat.finance/) | Borrower decree, permissioned lenders | Live · **~$150M outstanding** |
 | [Liquity V2](https://www.liquity.org/) | The borrower (rate sets redemption order) | Live · **~$74M** |
@@ -43,6 +43,7 @@ A single scrolling deck of 13 numbered pages plus a closing panel:
 | [Secured Finance](https://secured.finance/) | On-chain order book + Itayose auction | Live · ~$0.6M |
 | [IPOR](https://ipor.io/) | Interest-rate swap AMM (overlay on Aave/Compound) | Live · IRS now legacy |
 | [Morpho Midnight](https://morpho.org/) | Two-sided offers, no interest-rate model | Live 21 Jul 2026 · ~$1.9M *(Aug 2026)* |
+| [Iris Credit](https://lens.iris.credit/posts/about-iris) | Competitive solver RFQ; bonded solver manages variable-rate funding | Testnet live 11 Aug 2026 · mainnet pending · TVL n/a |
 
 ## The headline findings
 
@@ -50,12 +51,13 @@ A single scrolling deck of 13 numbered pages plus a closing panel:
 - **Fira's headline was doing the marketing.** A ~$425M gross loan book nets to roughly $5M of real on-chain value once the collateral it loops through itself is stripped out. Net TVL is the only honest cross-protocol ruler, so the brief ranks on it throughout.
 - **Scale was never the survival trait.** Notional once topped ~$843M and still wound down after the November 2025 Balancer hack. Goldfinch – a16z-backed, once the flagship of undercollateralized RWA credit – passed GIP-87 unanimously in June 2026 and went into maintenance mode with GFI down ~99.8% from its 2022 high.
 - **The money already moved next door.** ~$15B of tokenized Treasuries at a blended ~3.3% yield, with Circle's USYC having overtaken BlackRock's BUIDL as the largest single product, plus Maple (~$2.1B) and Centrifuge (~$1.63B) in institutional credit.
-- **Rate discovery is the real taxonomy.** Auction, bond price, order book, a two-sided offer, a token you hold, pool utilization, a swap overlay, or simple borrower decree – mechanism choice is what actually separates these protocols, not branding.
+- **Rate discovery is the real taxonomy.** Auction, bond price, order book, a two-sided offer, a token you hold, pool utilization, a swap overlay, a solver RFQ, or simple borrower decree – mechanism choice is what actually separates these protocols, not branding.
+- **Iris rejects the fixed-pool premise.** Borrowers sign intents, bonded solvers compete on fixed-rate quotes, and the winner funds and actively manages the loan through existing variable-rate venues. It avoids siloing liquidity by maturity. A curated testnet launched 11 August 2026; public mainnet and TVL remain pending.
 - **The best-funded attempt launched into silence.** Morpho shipped Midnight on 21 July 2026 and it drew ~$1.9M. The mechanism was built properly by the largest team in on-chain lending, and the volume still did not appear – which is the cleanest evidence the brief has for its own thesis.
 
 ## How it's built
 
-One file. `index.html`, ~68KB, 1,264 lines, 14 `<section>` blocks. No build step, no bundler, no dependencies to install, no JavaScript.
+One file. `index.html`, 14 `<section>` blocks. No build step, no bundler, no dependencies to install, no JavaScript.
 
 - **Type** – [Fraunces](https://fonts.google.com/specimen/Fraunces) for display and [Inter](https://fonts.google.com/specimen/Inter) for body, loaded from Google Fonts. These are the only external network requests the page makes.
 - **Palette** – defined as CSS custom properties in `:root`: paper `#F2EBDD`, ink `#1A1816`, accent `#C44A36`, plus muted/rule/highlight/olive supporting tones. Change a value there and it propagates through the whole deck.
@@ -63,6 +65,12 @@ One file. `index.html`, ~68KB, 1,264 lines, 14 `<section>` blocks. No build step
 - **Responsive** – a single `@media (max-width: 900px)` breakpoint collapses the multi-column layouts and lets the wide matrix scroll horizontally inside its own container.
 
 The same design system backs the sister brief at [trancheprotocol.com](https://trancheprotocol.com/).
+
+The content regression test also has no dependencies:
+
+```bash
+python3 -B -m unittest discover -s .claude/tests -v
+```
 
 ## Run it locally
 
@@ -97,8 +105,8 @@ The site is hosted on **Cloudflare Workers** with the static-assets integration,
 
 ## Data & methodology
 
-- **Sources** – [DefiLlama](https://defillama.com/) for TVL, [rwa.xyz](https://app.rwa.xyz/) for the tokenized-Treasury tier, and individual protocol documentation for mechanism detail.
-- **As-of** – protocol figures verified **21 June 2026**; the page carries a revision note of **August 2026**.
+- **Sources** – [DefiLlama](https://defillama.com/) for TVL, [rwa.xyz](https://app.rwa.xyz/) for the tokenized-Treasury tier, and individual protocol documentation for mechanism detail, including [Introducing IRIS](https://lens.iris.credit/posts/about-iris) and the [Iris testnet announcement](https://x.com/iris_credit/status/2087164274074698136).
+- **As-of** – core protocol figures verified **21 June 2026**, Morpho Midnight updated **1 August 2026**, and Iris Credit's testnet status verified **16 August 2026**.
 - **Scope** – fixed-rate, *fixed-term borrowing*. Yield-fixing protocols, tranching chassis, and variable-rate loopers are covered only as adjacent context.
 
 Because the underlying figures move continuously, treat every number here as a dated snapshot rather than a live feed.
